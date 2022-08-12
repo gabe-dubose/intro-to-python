@@ -14608,7 +14608,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <p><b>Tabs</b></p>
 <p>Another import spacing character is the tab, denoted as <b>\t</b>. These characters are often used for indentation in paragraphs, as well as code in Python (which we will see later). In many cases, coding languages that do not require tabs will still be written with tabs to help with human readability.</p>
 <p><b>New Lines</b></p>
-<p>Characters are read by a computer in a straight line. Anytime we see a new line, there is actually an invisible character telling the computer to show a new line on our screens. This is often denoted as <b>\n</b>. When we are processing most files, we will want to remvoe these characters from the ends of lines so that we can better manipulate the data into the output that we want.</p>
+<p>Characters are read by a computer in a straight line. Anytime we see a new line, there is actually an invisible character telling the computer to show a new line on our screens. This is often denoted as <b>\n</b>. When we are processing most files, we will want to remove these characters from the ends of lines so that we can better manipulate the data into the output that we want.</p>
 
 </div>
 </div>
@@ -14693,7 +14693,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># New lines are present in almost all documents that you will encounter </span>
-<span class="c1"># It would be really diffucult to read a file that is just in one straight line</span>
+<span class="c1"># It would be really difficult to read a file that is just in one straight line</span>
 
 <span class="n">line1</span> <span class="o">=</span> <span class="s2">&quot;This is line 1&quot;</span>
 <span class="n">line2</span> <span class="o">=</span> <span class="s2">&quot;This is line 2&quot;</span>
@@ -14742,8 +14742,8 @@ This is line 3
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>As you can see in the first example, we define three variables and print them using an f-string. We also insert a tab character (<b>\t</b>) between each of the fields. You can see in the output that there is a large space between each variable. In the second example, we also define three variable and print them using an f-string. However, this time we inserted new line charcters (<b>\n</b>) to make them each print onto a new line.</p>
-<p>Now that we've looked at different kinds of white spaces that you migth encounter, now lets look at how to remove them.</p>
+<p>As you can see in the first example, we define three variables and print them using an f-string. We also insert a tab character (<b>\t</b>) between each of the fields. You can see in the output that there is a large space between each variable. In the second example, we also define three variable and print them using an f-string. However, this time we inserted new line characters (<b>\n</b>) to make them each print onto a new line.</p>
+<p>Now that we've looked at different kinds of white spaces that you might encounter, now lets look at how to remove them.</p>
 <p>Consider this line of HTML code:</p>
 
 </div>
@@ -14796,7 +14796,7 @@ This is line 3
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We want to clean up this line by removeing everythin except "The GreenLight Fund - Atlanta."</p>
+<p>We want to clean up this line by removing everything except "The GreenLight Fund - Atlanta."</p>
 <p>First, this line of code has an unknown number of white spaces in the beginning that will need to be removed. Python has a functionality for this called <b>.strip()</b>. The default behavior of this function is to remove all leading and trailing spaces from a string, which is what we need to do.</p>
 
 </div>
@@ -14903,7 +14903,7 @@ This is line 3
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In the example above, we told the strip function to remove all leading and trailing underscores by feeding putting an undersocre between the parantheses in the strip function. This is known as an <b>argument</b>, and most functions take arguments to provide further specification on what you want the function to do.</p>
+<p>In the example above, we told the strip function to remove all leading and trailing underscores by feeding putting an underscore between the parentheses in the strip function. This is known as an <b>argument</b>, and most functions take arguments to provide further specification on what you want the function to do.</p>
 <p><i>*Notice that, only the leading and trailing underscores are removed, and the underscore between "some" and "text" is left.</i></p>
 
 </div>
@@ -14980,7 +14980,7 @@ This is line 3
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Now that we have covered the basics of print statemtns, variable assignment, and string manipulations, we will go over a worked exmaple, and then into some practice problems. This example will be an early introduction to one of the most important aspects of programming: developing an approach before writing code. This might seem a bit silly because this is not a very complicated example. It would be easy enough to just write the code very quickly. However, it is good to start practicing this because it will make more complex tasks more approachable. That being said, let's get into the example.</p>
+<p>Now that we have covered the basics of print statements, variable assignment, and string manipulations, we will go over a worked example, and then into some practice problems. This example will be an early introduction to one of the most important aspects of programming: developing an approach before writing code. This might seem a bit silly because this is not a very complicated example. It would be easy enough to just write the code very quickly. However, it is good to start practicing this because it will make more complex tasks more approachable. That being said, let's get into the example.</p>
 
 </div>
 </div>
@@ -15066,7 +15066,7 @@ This is line 3
 <p><u>Approach</u></p>
 <p>Step 1: We want to remove the white space from the front of each line. This can be done with .strip().</p>
 <p>Step 2: We want to remove the unwanted characters from the beginning and end of each line. This can be done with .rstrip() and .lstrip()</p>
-<p>Step 3: We want to print the strings with a tab between each variable. This can be done with an f-stirng.</p>
+<p>Step 3: We want to print the strings with a tab between each variable. This can be done with an f-string.</p>
 <p><i>Note that we are not writing the exact details of what exactly we are going to type. We are simply writing down what the objective is and how we can accomplish it, and we divide this process up into steps to make it easier for us to think about. Again, this might seem silly because this task is relativly straight forward, but this approach will be useful later.<i/></p>
 
 </div>

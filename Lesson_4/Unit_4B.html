@@ -14591,7 +14591,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The overall goal of this course is to introduce Python by teaching you how to scrape a webpage into a table, and then work with said table. As of Unit 4A, we have completed the first part. Now, we are transitioning into writing tables and how to work with them. As we usually do, before diving into tables, let's discuss what a table really is.</p>
-<p>A <b>table</b> is a data structure used to organize information. If you have worked in Excel, this might seem intuitive. Tables are <b>structured</b>, meaning values in a column or row are usually related in some way. For example, all of the values under a column called "GPS Coordinates" are, well, GPS coordiantes. We won't get into all of the different ways to store data. Right now, all that is important for you to keep in mind is that a table is more of a concept that helps us organize and visualize information.</p>
+<p>A <b>table</b> is a data structure used to organize information. If you have worked in Excel, this might seem intuitive. Tables are <b>structured</b>, meaning values in a column or row are usually related in some way. For example, all of the values under a column called "GPS Coordinates" are, well, GPS coordinates. We won't get into all of the different ways to store data. Right now, all that is important for you to keep in mind is that a table is more of a concept that helps us organize and visualize information.</p>
 <p>Tables can be created from many different types of data structures in Python. We could make a table entirely of strings or lists if we wanted to. This is perfectly fine, but it might not be the easiest to code or to understand. Since Python doesn't offer a built-in method for creating and visualizing tables, we will use the <b>Pandas</b> module.</p>
 
 </div>
@@ -14616,7 +14616,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><i>This unit assumes you have already watched the video on how to install modules and that Pandas is already installed on your computer.</i></p>
-<p>As mentioned in the introduction, Pandas is a module that is useful for storing and visualizing tables with Python. You might have some experience working with tables in Excel or some other software. You can think of this lesson the same way. While working with tables in other more visual softwares might be easier, this usually requires a lot of manual user input. The value of workin with tables in Python is that we can automate many tasks and perform them very quickly.</p>
+<p>As mentioned in the introduction, Pandas is a module that is useful for storing and visualizing tables with Python. You might have some experience working with tables in Excel or some other software. You can think of this lesson the same way. While working with tables in other more visual softwares might be easier, this usually requires a lot of manual user input. The value of working with tables in Python is that we can automate many tasks and perform them very quickly.</p>
 <p>First we need to import pandas. For simplicity, we will import pandas under the alias "pd" because this will make using the functions in pandas simpler.</p>
 
 </div>
@@ -14645,7 +14645,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In many cases you might have some sort of table stored on a file already, and you want to read this table into a pandas <b>data frame</b>, which you can think of a pandas implementation of a table strcuture. Pandas offers the <b>read_csv()</b> function to accomplish this. Although "csv" stands for "comma separated values," pandas can read other table formats as well by specifying what your delimiter is.</p>
+<p>In many cases you might have some sort of table stored on a file already, and you want to read this table into a pandas <b>data frame</b>, which you can think of a pandas implementation of a table structure. Pandas offers the <b>read_csv()</b> function to accomplish this. Although "csv" stands for "comma separated values," pandas can read other table formats as well by specifying what your delimiter is.</p>
 <p>In the Lesson_4 directory, there is a table called "recent_projects_info_table" that is saved in both csv and tsv formats. Let's look at how to read both of these tables into a pandas data frame.</p>
 
 </div>
@@ -15606,6 +15606,22 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15832,7 +15848,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Just like with lists, we can select a range of values as well. For exampls, say we want to select the entire Websites column. There are two ways we can accomplis this. First, we can select based on the index of the columns and rows we want:</p>
+<p>Just like with lists, we can select a range of values as well. For example, say we want to select the entire Websites column. There are two ways we can accomplish this. First, we can select based on the index of the columns and rows we want:</p>
 
 </div>
 </div>
@@ -16918,7 +16934,7 @@ The Bakery  https://thebakeryatlanta.com/
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The simplest way to use the "to_csv()" function is to just provide your file name. Notice that noting printed out. This is because instead of printing out our data frame, we wrote it's contents to a csv file that is now on our machine.</p>
+<p>The simplest way to use the "to_csv()" function is to just provide your file name. Notice that nothing printed out. This is because instead of printing out our data frame, we wrote it's contents to a csv file that is now on our machine.</p>
 <p>We can also write different formats, like tsv, by specifying what our separator is (just like with the read_csv() function).</p>
 
 </div>
