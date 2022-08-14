@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        li a:hover {
+            background-color: #FFD43B;
+            transition: 0.2s;
+        }
+        .header-block {
+            height: 200px;
+            width: 100%;
+            background-color: #306998;
+            padding-top: 100px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 35px;
+            color: white;
+        }
+        .intro-message-block {
+            padding-left: 10px;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            border-right: .15em solid #FFD43B;
+            animation:
+                typing 4s steps(30, end),
+                blink-cursor 1s step-end;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 42% }
+        }
+        @keyframes blink-cursor {
+            from, to { border-color : transparent }
+            50% { border-color: #FFD43B; }
+        }
+        .lesson-button {
+            height: 150px;
+            width: 200px;
+            background-color: white;
+            border: 1px solid;
+            border-color: black;
+            box-shadow: 5px 10px #646464;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            text-align: center;
+            display: inline-block;
+            left: 50%;
+            right: 50%;
+            padding-top: 100px;
+            padding-right: 100px;
+        }
+        .lesson-button:hover {
+            background-color: #FFD43B;
+            transform: scale(1.1) perspective(1px);
+            transition: 0.4s;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            padding-top: 100px;
+            padding-bottom: 120px;
+            text-align: center;
+        }
+    </style>
+
+    <header>
+        <!--Navigation Bar-->
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #306998;">
+                <li class = "header-text" style="float: left;"><a style = "color: white; display: block; text-align: center; padding: 14px 16px;
+                    text-decoration: none; font-family: 'Courier New', Courier, monospace;"
+                    href = "index.html">Home</a>
+                </li>
+                <li style="float: left;"><a style = "color: white; display: block; text-align: center; padding: 14px 16px;
+                    text-decoration: none; font-family: 'Courier New', Courier, monospace;"
+                    href = "dashboard.html">Dashboard</a>
+                </li>
+                <li style="float: left;"><a style = "color: white; display: block; text-align: center; padding: 14px 16px;
+                    text-decoration: none; font-family: 'Courier New', Courier, monospace;"
+                    href = "about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <!--Header Block-->
+        <div class = "header-block"><div class = "intro-message-block">print('Learning Dashboard')</div></div>
+        <br>
+        <!--Lesson 1 Button-->
+        <div class = "lesson-button" style = "margin-left: 1%;"><a style = "padding-left: 75px; padding-right: 75px;" href="intro-material.html">Introduction</a></div>
+        <!--Lesson 2 Button-->
+        <div class = "lesson-button" style = "margin-left: 1%;"><a style = "padding-left: 105px; padding-right: 100px;" href="lessons.html">Lessons</a></div>
+        <!--Lesson 3 Button-->
+        <div class = "lesson-button" style = "margin-left: 1%; margin-right: 1%;"><a style = "padding-left: 95px; padding-right: 100px;" href="lessons.html">Resources</a></div>
+    </body>
+</html>

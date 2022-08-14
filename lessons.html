@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            padding-bottom: 300px;
+        }
+        li a:hover {
+            background-color: #FFD43B;
+            transition: 0.2s;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .header-block {
+            height: 200px;
+            width: 100%;
+            background-color: #306998;
+            padding-top: 100px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 35px;
+            color: white;
+        }
+        .sub-header-text {
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            border-bottom: 1px solid black;
+            background-color: white;
+            font-size: 35px;
+            width: 100%;
+            text-align: left;
+            padding-left: 5px;
+        }
+        .body-text {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: justify;
+            color: black;
+            font-size: 20px;
+            width: 80%;
+        }
+        .video-imbed {
+            height: 200px;
+            width: 400px;
+            margin-left: 50%;
+        }
+        .float-container {
+            padding: 10px;
+        }
+        .float-child {
+            width: 600px;
+            float: left;
+            padding: 10px;
+        }
+        .intro-message-block {
+            padding-left: 10px;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            border-right: .15em solid #FFD43B;
+            animation:
+                typing 3s steps(20, end),
+                blink-cursor 1s step-end;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 42% }
+        }
+        @keyframes blink-cursor {
+            from, to { border-color : transparent }
+            50% { border-color: #FFD43B; }
+        }
+        .button {
+            background-color: white;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 5px 5px #646464;
+            border: none;
+            color: black;
+            border: 1px solid black;
+            padding: 15px 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            position: absolute;
+            left: 15px;
+        }
+        .button:hover {
+            background-color: #FFD43B;
+            transform: scale(1.1) perspective(1px);
+            transition: 0.4s;
+        }
+    </style>
+
+    <header>
+        <!--Navigation Bar-->
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #306998;">
+                <li class = "header-text" style="float: left;"><a style = "color: white; display: block; text-align: center; padding: 14px 16px;
+                    text-decoration: none; font-family: 'Courier New', Courier, monospace;"
+                    href = "index.html">Home</a>
+                </li>
+                <li style="float: left;"><a style = "color: white; display: block; text-align: center; padding: 14px 16px;
+                    text-decoration: none; font-family: 'Courier New', Courier, monospace;"
+                    href = "dashboard.html">Dashboard</a>
+                </li>
+                <li style="float: left;"><a style = "color: white; display: block; text-align: center; padding: 14px 16px;
+                    text-decoration: none; font-family: 'Courier New', Courier, monospace;"
+                    href = "about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <body>
+        <div class = "header-block"><div class = "intro-message-block">print('Python Lessons')</div></div>
+        <!--Lesson 1-->
+        <br><br>
+        <div class = "sub-header-text" style = "margin-top: 20px;"><a id = "lesson1"></a>Lesson 1</div>
+        <div class = "float-container"></div>
+            <div class = "float-child"><div class = "body-text">Unit A: How to Manipulate Strings</div></div>
+            <div class = "float-child"><iframe class = "video-imbed" src= "https://youtu.be/xXG7mfeUMlg"></iframe></div>
+        </div>
+        <button class = "button" style = "margin-top: 45px;">Download Files</button>
+        <button class = "button" style = "margin-top: 45px; margin-left: 155px;"><a href = "Lesson_1/Unit_1A.html">View in Browser</a></button>
+        <div class = "float-container"></div>
+            <div class = "float-child"><div class = "body-text">Unit B: How to Handle White Spaces</div></div>
+            <div class = "float-child"><iframe class = "video-imbed" src= "https://youtu.be/xXG7mfeUMlg"></iframe></div>
+        </div>
+        <button class = "button" style = "margin-top: 255px;">Download Files</button>
+        <button class = "button" style = "margin-top: 255px; margin-left: 155px;"><a href = "Lesson_1/Unit_1B.html">View in Browser</a></button>
+
+        <!--Lesson 2-->
+        <br><br>
+        <div class = "sub-header-text" style = "margin-top: 450px;"><a id = "lesson2"></a>Lesson 2</div>
+        <div class = "float-container"></div>
+            <div class = "float-child"><div class = "body-text">Unit A: How to Define and Manipulate Lists</div></div>
+            <div class = "float-child"><iframe class = "video-imbed" src= "https://youtu.be/xXG7mfeUMlg"></iframe></div>
+        </div>
+        <button class = "button" style = "margin-top: 65px;">Download Files</button>
+        <button class = "button" style = "margin-top: 65px; margin-left: 155px;"><a href = "Lesson_2/Unit_2A.html">View in Browser</a></button>
+        <div class = "float-container"></div>
+            <div class = "float-child"><div class = "body-text">Unit B: How to Read Files into Lists</div></div>
+            <div class = "float-child"><iframe class = "video-imbed" src= "https://youtu.be/xXG7mfeUMlg"></iframe></div>
+        </div>
+        <button class = "button" style = "margin-top: 255px;">Download Files</button>
+        <button class = "button" style = "margin-top: 255px; margin-left: 155px;"><a href = "Lesson_2/Unit_2B.html">View in Browser</a></button>
+
+        <!--Lesson 3-->
+        <br><br>
+        <div class = "sub-header-text" style = "margin-top: 450px;"><a id = "lesson3"></a>Lesson 3</div>
+        <div class = "float-container"></div>
+            <div class = "float-child"><div class = "body-text">Unit A: How to Use Conditionals and Boolean Operators</div></div>
+            <div class = "float-child"><iframe class = "video-imbed" src= "https://youtu.be/xXG7mfeUMlg"></iframe></div>
+        </div>
+        <button class = "button" style = "margin-top: 65px;">Download Files</button>
+        <button class = "button" style = "margin-top: 65px; margin-left: 155px;"><a href = "Lesson_3/Unit_3A.html">View in Browser</a></button>
+        <div class = "float-container"></div>
+            <div class = "float-child"><div class = "body-text">Unit B: How to Use Loops</div></div>
+            <div class = "float-child"><iframe class = "video-imbed" src= "https://youtu.be/xXG7mfeUMlg"></iframe></div>
+        </div>
+        <button class = "button" style = "margin-top: 255px;">Download Files</button>
+        <button class = "button" style = "margin-top: 255px; margin-left: 155px;"><a href = "Lesson_3/Unit_3B.html">View in Browser</a></button>
+
+        <!--Lesson 4-->
+        <br><br>
+        <div class = "sub-header-text" style = "margin-top: 450px;"><a id = "lesson4"></a>Lesson 4</div>
+        <div class = "float-container"></div>
+            <div class = "float-child"><div class = "body-text">Unit A: How to Write Functions and Use Modules</div></div>
+            <div class = "float-child"><iframe class = "video-imbed" src= "https://youtu.be/xXG7mfeUMlg"></iframe></div>
+        </div>
+        <button class = "button" style = "margin-top: 65px;">Download Files</button>
+        <button class = "button" style = "margin-top: 65px; margin-left: 155px;"><a href = "Lesson_4/Unit_4A.html">View in Browser</a></button>
+        <div class = "float-container"></div>
+            <div class = "float-child"><div class = "body-text">Unit B: How to Work with Tables</div></div>
+            <div class = "float-child"><iframe class = "video-imbed" src= "https://youtu.be/xXG7mfeUMlg"></iframe></div>
+        </div>
+        <button class = "button" style = "margin-top: 255px;">Download Files</button>
+        <button class = "button" style = "margin-top: 255px; margin-left: 155px;"><a href = "Lesson_4/Unit_4B.html">View in Browser</a></button>
+    </body>
+</html>
