@@ -4,6 +4,8 @@ This repository contains a series of Jupyter Notebooks that are one of the prima
 
 This course is divided into four lessons, each with two primary units. Each unit is also broken down into different sections. The objective of this course is not to teach a comprehensive "How to Program with Python." Rather, this course aims to teach users the basics of Python so that they might be able to use to make tasks easier in their every day work.
 
+Visit https://gabe-dubose.github.io/python-for-web-scraping/ for the official course site.
+
 NOTE: This course is still under development and more thorough documentation will be uploaded as it is completed.
 
 ## Table of Contents
